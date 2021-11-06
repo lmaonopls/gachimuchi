@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="80dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="რეგისტრაცია"
+            android:textSize="45dp"
+            android:layout_gravity="center">
+
+        </TextView>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+
+                android:id="@+id/personame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="სახელი"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+
+            </EditText>
+            <EditText
+
+                android:id="@+id/persurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="გვარი"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+
+            </EditText>
+
+        </LinearLayout>
+        <EditText
+
+            android:id="@+id/pemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:layout_margin="10dp">
+
+        </EditText>
+        <EditText
+
+            android:id="@+id/perword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="პაროლი"
+            android:layout_margin="10dp">
+
+        </EditText>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+
+                android:id="@+id/mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="ვეთანხმები პირობებს"
+                android:textSize="15dp">
+
+            </CheckBox>
+
+        </LinearLayout>
+        <Button
+
+            android:id="@+id/clicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="რეგისტრაცია"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:textSize="20dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
